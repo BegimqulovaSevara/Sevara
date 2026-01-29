@@ -1,0 +1,163 @@
+/* GLOBAL */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+    flex-grow: 1;
+}
+
+/* HEADER SECTION */
+.header__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigaiton {
+    display: flex;
+    justify-content: space-between;
+    /* Logo chap, list + button o‘ngda */
+    align-items: center;
+    padding: 16px 0;
+    flex-wrap: wrap;
+    /* mobil uchun */
+}
+
+.navigation_logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.navigation__list-link {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+.navigation__list-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact tugma (nav ichida) */
+.contact-btn {
+    padding: 8px 16px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Hero button (navigationdan alohida) */
+.hero-btn {
+    margin-left: 16px;
+    padding: 8px 16px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.hero {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero__name {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero__prof {
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+}
+
+.hero__description {
+    max-width: 600px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navigaiton {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .navigation__list {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        margin-top: 24px;
+    }
+}
