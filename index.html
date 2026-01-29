@@ -9,132 +9,103 @@
 </head>
 
 <body>
-    <!-- HEADER  -->
     <header class="header">
         <div class="container header__container">
-            <!-- NAVIGATION  -->
             <nav class="navigaiton">
                 <div class="navigation_logo">Begimqulova Sevara</div>
-
                 <ul class="navigation__list">
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link" href="#about">About</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="navigation__list-item">
-                        <a class="navigation__list-link" href="#contact" class="contact-btn">Contact</a>
-                    </li>
+                    <li><a href="#about" class="navigation__list-link">About</a></li>
+                    <li><a href="#projects" class="navigation__list-link">Projects</a></li>
+                    <li><a href="#contact" class="navigation__list-link">Contact</a></li>
                 </ul>
-
                 <a href="#contact" class="hero-btn">Contact Me</a>
             </nav>
-            <!-- HERO -->
-            <div class="hero">
-                <h1 class="hero__name">Begimqulova Sevara</h1>
-                <h2 class="hero__prof">Junior Frontend Developer</h2>
-                <p class="hero__description">HTML, CSS va JavaScript yordamida foydalanuvchiga qulay veb-interfeyslar
-                    yarataman.</p>
-            </div>
         </div>
     </header>
-
-    <!-- ABOUT SECTION -->
-    <section class="about">
-        <section id="about" class="about">
-            <div class="container about__container">
-                <!-- About text -->
-                <h2 class="section-title">About Me</h2>
-                <p class="about__text">
-                    Junior frontend developerman, HTML, CSS va JavaScript yordamida foydalanuvchiga qulay interfeyslar
-                    yarataman.
-                    Kichik loyihalar orqali tajribamni oshirdim va yangi bilimlarni tez o‘zlashtiraman.
+    <section class="hero">
+        <div class="container hero__container">
+                <!-- <img src="sevara-photo.jpg" alt="Sevara Begimqulova" class="hero__image"> -->
+                <h1 class="hero__name">Begimqulova Sevara</h1>
+                <h2 class="hero__prof">Junior Frontend Developer</h2>
+                <p class="hero__description">
+                    HTML, CSS va JavaScript yordamida foydalanuvchiga qulay veb-interfeyslar yarataman.
                 </p>
-
-                <!-- Skills -->
-                <h3 class="skills-title">Skills</h3>
-                <ul class="skills__list">
-                    <li class="skills__item">HTML</li>
-                    <li class="skills__item">CSS</li>
-                    <li class="skills__item">JavaScript</li>
-                    <li class="skills__item">GitHub</li>
-                    <li class="skills__item">Figma</li>
-                </ul>
             </div>
-        </section>
-
+        </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section class="projects">
-        <section id="projects" class="projects">
-            <div class="container projects__container">
-                <h2 class="section-title">Projects</h2>
+    <!-- ABOUT + SKILLS -->
+    <section id="about" class="about">
+        <div class="container about__container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about__text">
+                Junior frontend developerman, HTML, CSS va JavaScript yordamida foydalanuvchiga qulay interfeyslar
+                yarataman.
+                Kichik loyihalar orqali tajribamni oshirdim va yangi bilimlarni tez o‘zlashtiraman.
+            </p>
 
-                <div class="projects__grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Todo App</h3>
-                        <p class="project-description">HTML, CSS va JavaScript yordamida foydalanuvchi vazifalarni
-                            qo‘shishi, tahrirlashi va o‘chirishini ta’minlaydi.</p>
-                        <a href="https://github.com/sevarabegimkulova/todo-app" class="project-link"
-                            target="_blank">View Code</a>
-                    </div>
+            <h3 class="skills-title">Skills</h3>
+            <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">GitHub</li>
+                <li class="skills__item">Figma</li>
+            </ul>
+        </div>
+    </section>
 
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Calculator App</h3>
-                        <p class="project-description">Oddiy calculator, foydalanuvchi uchun qulay interaktiv UI bilan
-                            JavaScript orqali ishlaydi.</p>
-                        <a href="https://github.com/sevarabegimkulova/calculator-app" class="project-link"
-                            target="_blank">View Code</a>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Dark/Light Mode</h3>
-                        <p class="project-description">Veb sahifa rang sxemasini foydalanuvchi tanlashi mumkin — light
-                            va dark mode bilan.</p>
-                        <a href="https://github.com/sevarabegimkulova/dark-light-mode" class="project-link"
-                            target="_blank">View Code</a>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <h3 class="project-title">Mohirdev Project</h3>
-                        <p class="project-description">Mohirdev kursida yaratgan loyiha, front-end asoslarini qo‘llash
-                            orqali tayyorlangan.</p>
-                        <a href="https://github.com/sevarabegimkulova/mohirdev-project" class="project-link"
-                            target="_blank">View Code</a>
-                    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <div class="container projects__container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <h3 class="project-title">Todo App</h3>
+                    <p class="project-description">HTML, CSS va JavaScript yordamida foydalanuvchi vazifalarni
+                        qo‘shishi, tahrirlashi va o‘chirishini ta’minlaydi.</p>
+                    <a href="https://github.com/sevarabegimkulova/todo-app" class="project-link" target="_blank">View
+                        Code</a>
                 </div>
-
-                <!-- More Projects link -->
-                <a href="https://github.com/sevarabegimkulova" class="more-projects" target="_blank">More Projects on
-                    GitHub</a>
+                <div class="project-card">
+                    <h3 class="project-title">Calculator App</h3>
+                    <p class="project-description">Oddiy calculator, foydalanuvchi uchun qulay interaktiv UI bilan
+                        JavaScript orqali ishlaydi.</p>
+                    <a href="https://github.com/sevarabegimkulova/calculator-app" class="project-link"
+                        target="_blank">View Code</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Dark/Light Mode</h3>
+                    <p class="project-description">Veb sahifa rang sxemasini foydalanuvchi tanlashi mumkin — light va
+                        dark mode bilan.</p>
+                    <a href="https://github.com/sevarabegimkulova/dark-light-mode" class="project-link"
+                        target="_blank">View Code</a>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Mohirdev Project</h3>
+                    <p class="project-description">Mohirdev kursida yaratgan loyiha, front-end asoslarini qo‘llash
+                        orqali tayyorlangan.</p>
+                    <a href="https://github.com/sevarabegimkulova/mohirdev-project" class="project-link"
+                        target="_blank">View Code</a>
+                </div>
             </div>
-        </section>
-
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section class="skills">
-        <div class="container">
-
+            <a href="https://github.com/sevarabegimkulova" class="more-projects" target="_blank">More Projects on
+                GitHub</a>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-
+    <footer class="footer" id="contact">
+        <div class="container footer__container">
+            <p>&copy; 2026 Begimqulova Sevara. All rights reserved.</p>
+            <p>
+                Contact:
+                <a href="mailto:sevarabegimkulova58@gmail.com">Email</a> |
+                <a href="https://github.com/sevarabegimkulova" target="_blank">GitHub</a> |
+                <a href="https://t.me/sevar1cka" target="_blank">Telegram</a>
+            </p>
         </div>
     </footer>
-
     <script src="./js/app.js"></script>
 </body>
 

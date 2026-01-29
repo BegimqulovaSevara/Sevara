@@ -54,6 +54,13 @@ ul {
 }
 
 /* HEADER SECTION */
+.header {
+    background-color: #222;
+    /* footer bilan bir xil */
+    color: #fff;
+    padding: 16px 0;
+}
+
 .header__container {
     display: flex;
     flex-direction: column;
@@ -83,7 +90,7 @@ ul {
 
 .navigation__list-link {
     text-decoration: none;
-    color: #222;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -118,7 +125,7 @@ ul {
     color: #fff;
 }
 
-.hero {
+.hero__container {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -256,6 +263,31 @@ ul {
     color: #fff;
 }
 
+.footer {
+    padding: 40px 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 8px;
+}
+
+.footer a:hover {
+    color: #f1c40f;
+    /* hoverda jonli rang */
+}
+
+.footer__container p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .projects__grid {
@@ -283,7 +315,7 @@ ul {
         gap: 12px;
     }
 
-    .hero {
+    .hero__container {
         margin-top: 24px;
     }
 }
