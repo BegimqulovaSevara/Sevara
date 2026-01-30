@@ -205,13 +205,17 @@ ul {
 }
 
 .skills__item {
+    display: flex;
+    justify-content: space-between;
     background-color: #f1f1f1;
-    padding: 8px 16px;
+    padding: 8px;
     border-radius: 6px;
     font-weight: 500;
     color: #222;
 }
-
+.skills__item-text{
+    margin: 0;
+}
 .projects {
     padding: 80px 0;
 }
