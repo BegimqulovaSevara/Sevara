@@ -207,6 +207,7 @@ ul {
 .skills__item {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     background-color: #f1f1f1;
     padding: 8px;
     border-radius: 6px;
@@ -256,6 +257,7 @@ ul {
 }
 
 .project-link {
+    display: block;
     text-decoration: none;
     color: #222;
     font-weight: 500;
